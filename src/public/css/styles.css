@@ -1,0 +1,117 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  display: flex;
+  flex-direction: column; 
+  min-height: 100vh;
+}
+
+header {
+  background-color: #0d8113;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700; 
+  color: white;
+  padding: 20px;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+footer {
+  background-color: #0d8113;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  padding: 20px;
+}
+
+#username {
+  padding: 8px;
+  margin-right: 5px;
+  border: 1px solid #2e7d32;
+  border-radius: 5px;
+}
+
+#joinBtn {
+  padding: 8px 12px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #2e7d32;
+  color: white;
+}
+
+#messages {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #c8e6c9;
+  border-radius: 5px;
+  background: #ffffff;
+}
+
+#messages li {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+#messages li.eu {
+  background: #3b8841;
+  color: white;
+  margin-left: auto;
+  text-align: right;
+}
+
+#messages li.outro {
+  background: #d0e7d9;
+  color: #2e7d32;
+  margin-right: auto;
+  text-align: left;
+}
+
+#messages li.sistema {
+  background: #b3b4b3;
+  color: #484848d3;
+  margin-right: auto;
+  text-align: left;
+}
+
+#form {
+  display: flex;
+  gap: 10px;
+}
+
+#text {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #c8e6c9;
+  border-radius: 5px;
+}
+
+#form button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #2e7d32;
+  color: white;
+  cursor: pointer;
+}
+
+#form button:disabled {
+  background-color: #a5d6a7;
+  cursor: not-allowed;
+}
